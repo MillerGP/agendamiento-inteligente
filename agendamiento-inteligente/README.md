@@ -103,6 +103,3 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ⭐ Si este proyecto te ayuda, por favor dale una estrella en GitHub! 
 
-
-
-Como estas?
