@@ -50,7 +50,7 @@ agendamiento-inteligente/
 ```bash
 cd backend
 npm install
-npm run dev
+npm run start
 ```
 
 ### Frontend
