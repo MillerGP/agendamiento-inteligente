@@ -90,7 +90,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## 📞 Contacto
 
-- **Email**: [tu-email@ejemplo.com]
+- **Email**: millerarley1@gmail.com
 - **Proyecto**: [https://github.com/tu-usuario/agendamiento-inteligente]
 
 ## 🙏 Agradecimientos
