@@ -1,0 +1,38 @@
+----------------------------------------------------------------------------------------------------
+1. Instalacion de dependencias
+
+
+BACKEND
+cd backend  # Entra a la carpeta del backend
+npm install  # Instala dependencias básicas (según package.json)
+
+# Dependencias comunes en NestJS (si no están en package.json)
+npm install @nestjs/core @nestjs/common @nestjs/platform-express reflect-metadata rxjs
+npm install @nestjs/config  # Para variables de entorno (opcional pero recomendado)
+npm install @nestjs/swagger  # Si usas Swagger/OpenAPI (opcional)
+npm install --save-dev @nestjs/cli  # CLI de NestJS (para desarrollo)
+
+
+FRONTEND
+cd ../frontend  # Entra a la carpeta del frontend
+npm install  # Instala dependencias básicas (React, Vite, etc.)
+
+# Dependencias comunes en frontend (si no están en package.json)
+npm install react react-dom  # Core de React
+npm install --save-dev vite  # Bundler (ya debería estar)
+npm install --save-dev @vitejs/plugin-react  # Soporte para React en Vite
+npm install tailwindcss postcss autoprefixer  # TailwindCSS
+npm install --save-dev eslint prettier eslint-plugin-react  # Linting (opcional)
+
+
+----------------------------------------------------------------------------------------------------
+2.Ejecución de proyectos
+
+BACKEND
+cd backend
+npm run start:dev  # Modo desarrollo (con hot-reload)
+
+
+FRONTEND
+cd ../frontend
+npm run dev  # Inicia Vite en modo desarrollo
