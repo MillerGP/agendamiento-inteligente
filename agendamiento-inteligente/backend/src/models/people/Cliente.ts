@@ -1,6 +1,6 @@
 import { Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
-import { Cita } from './Cita';
-import Usuario from './Usuario';
+import { Cita } from '../operations/Cita';
+import Usuario from '../security/Usuario';
 
 @Entity('clientes', {'schema': "people"})
 export class Cliente {

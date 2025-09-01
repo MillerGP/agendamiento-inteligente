@@ -2,9 +2,17 @@ import { NestFactory } from "@nestjs/core";
 import { AppModule } from "./app.module";
 import { ValidationPipe } from "@nestjs/common";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
+import { ConfigService } from "@nestjs/config/dist/config.service";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  // Debug: verificar variables de entorno
+  const configService = app.get(ConfigService);
+  console.log('DB_HOST:', configService.get('DB_HOST'));
+  console.log('DB_PORT:', configService.get('DB_PORT'));
+  console.log('DB_USERNAME:', configService.get('DB_USERNAME'));
+  console.log('DB_DATABASE:', configService.get('DB_DATABASE'));
 
   // Enable CORS
   app.enableCors();

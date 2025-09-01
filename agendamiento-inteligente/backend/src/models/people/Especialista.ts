@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm";
-import Usuario from "./Usuario";
+import Usuario from "../security/Usuario";
 
 @Entity('especialistas', { schema: 'people' })
 export class Especialista {
@@ -14,6 +14,9 @@ export class Especialista {
 
     @Column({ type: 'varchar', length: 100, name: 'estado_especialista', nullable: false })
     estadoEspecialista: string;
+
+    @Column({type: 'varchar', length: 300, name: 'descripcion_especialista', nullable: false})
+    descripcionEspecialista: string;
 
     // Relaciones
 

@@ -1,13 +1,13 @@
 import { Column, CreateDateColumn, Entity, OneToOne, PrimaryGeneratedColumn, TableInheritance, UpdateDateColumn } from 'typeorm';
-import { Administrador } from './Administrador';
-import Cliente from './Cliente';
-import Especialista from './Especialista';
-import Gestor from './Gestor';
+import Cliente from '../people/Cliente';
+import Especialista from '../people/Especialista';
+import Gestor from '../people/Gestor';
+import { Administrador } from '../security/Administrador';
 import { Rol } from './Rol';
 
 @Entity('usuarios', { schema: 'security' })
 @TableInheritance({ column: { type: 'varchar', name: 'tipo' } })
-abstract class Usuario {
+export class Usuario {
     // Modelo Tabla Usuario
 
     @PrimaryGeneratedColumn({name: 'id_usuario'})

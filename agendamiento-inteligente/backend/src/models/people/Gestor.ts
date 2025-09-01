@@ -1,5 +1,5 @@
-import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm";
-import Usuario from "./Usuario";
+import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
+import Usuario from "../security/Usuario";
 
 @Entity('gestores', {schema: "people"})
 export class Gestor {

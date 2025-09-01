@@ -1,0 +1,6 @@
+-- Conéctate a tu base de datos y ejecuta:
+CREATE SCHEMA people;
+CREATE SCHEMA security;
+CREATE SCHEMA core;
+CREATE SCHEMA scheduling;
+CREATE SCHEMA operations;
